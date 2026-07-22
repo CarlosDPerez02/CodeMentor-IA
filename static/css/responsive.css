@@ -1,0 +1,49 @@
+
+@media (max-width: 992px) {
+
+    .sidebar {
+        width: 230px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .message {
+        max-width: 80%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    .header p {
+        font-size: .9rem;
+    }
+
+    .message {
+        max-width: 95%;
+    }
+
+    .chat-input {
+        padding: 15px;
+    }
+
+    .chat-input input {
+        font-size: .9rem;
+    }
+
+}

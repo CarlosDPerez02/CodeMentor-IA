@@ -1,0 +1,37 @@
+ Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables de entorno
+.env
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de JetBrains
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos de pruebas
+.pytest_cache/
+
+# Cobertura
+.coverage
+htmlcov/
+
+# Distribución
+build/
+dist/
+*.egg-info/

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMentor IA</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/sidebar.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+
+        <div class="sidebar-content">
+
+            <div class="logo">
+                <h2>&lt;/&gt;</h2>
+            </div>
+
+            <div class="tech-stack">
+
+                <h3>Tech Stack</h3>
+
+                <ul>
+                    <li>
+                        <img src="/static/images/python.png" alt="Python" >
+                        <a href="https://www.python.org/" target="_blank">
+                            Python 
+                        </a>
+                    </li>
+                    <li>
+                        <img src="/static/images/fastapi.png" alt="FastAPI" >
+                        <a href="https://fastapi.tiangolo.com/" target="_blank">
+                            FastAPI
+                        </a> 
+                    </li>
+                    <li>
+                        <img src="/static/images/posgressql.png" alt="PostgreSQL" >
+                        <a href="https://www.postgresql.org/" target="_blank">
+                            PostgreSQL 
+                        </a>
+                    </li>
+                    <li>
+                        <img src="/static/images/docker.png" alt="Docker" >
+                        <a href="https://www.docker.com/" target="_blank">
+                            Docker 
+                        </a>
+                    </li>
+                    <li>
+                        <img src="/static/images/groq.png" alt="Groq" >
+                        <a href="https://groq.com/groqcloud" target="_blank">
+                            Groq 
+                        </a>
+                    </li>
+                    <li>
+                        <img src="/static/images/html.png" alt="HTML" >
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                            HTML
+                        </a>
+                    </li>
+                    <li>
+                        <img src="/static/images/css.png" alt="CSS" >
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                            CSS 
+                        </a>
+                    </li>
+                    <li>
+                        <img src="/static/images/js.png" alt="JavaScript" >
+                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                            JavaScript
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="developer">
+            <p>Desarrollado por</p>
+            <strong>Carlos Pérez</strong>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="header">
+
+            <div class="header-title">
+                <h1>CodeMentor IA</h1>
+                <p>Tu asistente inteligente para programación, desarrollo de software y tecnologías modernas.</p>
+            </div>
+
+        </header>
+
+        <section class="chat-container">
+
+            <div class="chat-messages">
+
+                <div class="message ai">
+                    <p>👋 Hola, soy CodeMentor IA. ¿En qué puedo ayudarte hoy?</p>
+                    <span class="message-time" id="hora-inicial"></span>
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="message"
+                    placeholder="Escribe tu pregunta...">
+
+                    <button id="send-btn">
+                        ➤
+                    </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/ui.js"></script>
+
+</body>
+</html>
