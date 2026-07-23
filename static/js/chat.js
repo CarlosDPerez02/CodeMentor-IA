@@ -27,7 +27,7 @@ async function enviarMensaje() {
         console.log(window.location.href);
         console.log("/preguntas/preguntas");
 
-        const response = await fetch("http://127.0.0.1:8000/preguntas/preguntas", {
+        const response = await fetch(`${window.location.origin}/preguntas/preguntas`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
