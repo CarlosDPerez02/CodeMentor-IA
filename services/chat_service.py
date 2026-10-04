@@ -69,12 +69,18 @@ async def procesar_chat(db, pregunta:str, conversacion_id: int | None = None):
     
     respuesta = await consultar_groq(pregunta)
     
+    # guardar_mensaje(
+    #     db,
+    #     conversacion.id,
+    #     "assistant",
+    #     respuesta
+    #     )
     guardar_mensaje(
-        db,
-        conversacion.id,
-        "assistant",
-        respuesta
-        )
+    db,
+    conversacion_id,
+    "assistant",
+    respuesta
+    )
     
     return crear_respuesta(respuesta)
     
