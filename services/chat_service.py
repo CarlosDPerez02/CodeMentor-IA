@@ -33,7 +33,8 @@ def guardar_mensaje(db,conversacion_id,rol,contenido):
 async def consultar_groq(pregunta: str):
     try:
         respuesta = await cliente_groq.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+           # model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[
         {
         "role": "system",
